@@ -76,6 +76,16 @@ body {
     letter-spacing: 0px;
 }
 
+#connect-title:hover {
+    transition: .8s;
+    letter-spacing: 4px;
+}
+
+#connect-title:not(:hover) {
+    transition: .8s;
+    letter-spacing: 0px;
+}
+
 #about-title:hover {
     transition: .8s;
     letter-spacing: 12px;
@@ -88,6 +98,10 @@ body {
 
 .bg-darker {
     background-color: rgb(19, 19, 19);
+}
+
+.frame-vh {
+    height: 75vh;
 }
 
 
@@ -141,7 +155,7 @@ ul li a:hover {
     letter-spacing: 8px;
     transition: 1.2s;
     font-weight: bold;
-    color: rgb(255, 232, 98) !important;
+    color: rgb(255, 155, 23) !important;
 }
 
 
@@ -154,6 +168,9 @@ ul li a:hover {
     .h1-about {
         font-size: 32px;
     }
+    .h1-connect {
+        font-size: 18px;
+    }
     .h2 {
         font-size: 26px;
     }
@@ -161,6 +178,12 @@ ul li a:hover {
         min-height: auto;
         min-width: 75vw;
         border: 20px solid rgb(43, 43, 43) !important;
+    }
+}
+
+@media (min-width: 575.98px) {
+    .lg-vh {
+        height: 100vh;
     }
 }
 
@@ -175,3 +198,62 @@ ul li a:hover {
 
 
 /* CAROUSEL END*/
+
+
+/* NAV */
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+/* NAV END */
