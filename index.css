@@ -144,6 +144,11 @@
                     color: rgb(255, 155, 23) !important;
                 }
                 /* NAV END*/
+                /* MAP */
+                
+                .map-height-default {
+                    height: 720px;
+                }
                 
                 @media (max-width: 575.98px) {
                     .h1 {
@@ -162,6 +167,15 @@
                         min-height: auto;
                         min-width: 75vw;
                         border: 20px solid rgb(43, 43, 43) !important;
+                    }
+                    .map-height-sm {
+                        height: 480px;
+                    }
+                    .quote-sm {
+                        font-size: 32px;
+                    }
+                    .quote-container-sm {
+                        height: 25vh;
                     }
                 }
                 
